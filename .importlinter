@@ -1,11 +1,11 @@
 [importlinter]
-root_packages = src
+root_package = src
 
 [importlinter:contract:1]
 name = Marketplace domain isolation contract
 type = forbidden
-importer_modules = 
+importer_modules =
     src.marketplace
-forbidden_modules = 
+forbidden_modules =
     src.ingestion
     src.settlement
