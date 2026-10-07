@@ -4,7 +4,7 @@ root_package = src
 [importlinter:contract:1]
 name = Marketplace domain isolation contract
 type = forbidden
-importer_modules =
+source_modules =
     src.marketplace
 forbidden_modules =
     src.ingestion
