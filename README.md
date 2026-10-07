@@ -1,7 +1,6 @@
 # EcoGrid Energy
 
-This project demonstrates an event-driven energy trading architecture with isolated bounded contexts.
-
+This project demonstrates an event-driven energy trading architecture
 ## Structure
 
 - `src/shared` contains the shared event bus and message schema components.
