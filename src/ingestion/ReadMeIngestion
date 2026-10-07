@@ -1,0 +1,16 @@
+### Smart Meter Service
+
+This code is responsible to receive and processing data from smart meters.
+
+When a smart meter sends its generation and consumption values, the service calculates the net energy balance by subtracting consumption from generation.
+
+It then creates a reading containing:
+- Meter ID
+- Net energy balance
+- Timestamp
+
+The reading is printed to the console and then sent through the event bus as an "EnergyBalanceUpdated" event. This allows other parts of the system, such as the Marketplace, to receive the updated energy information asynchronously without the Smart Meter Service waiting for them.
+
+In simple terms:
+
+Smart Meter → Receive Data → Calculate Net Energy → Create Reading → Publish Event → Other Services Receive Update
